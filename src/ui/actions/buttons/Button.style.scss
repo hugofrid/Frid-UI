@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    * {
+        & .button {
+            @apply uppercase px-6 py-4 border border-black rounded-e-sm bg-red-500;
+            &--small {
+                @apply px-3 py-2;
+            }
+        }
+    }
+}
